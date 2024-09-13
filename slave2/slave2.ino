@@ -29,7 +29,7 @@ typedef struct struct_message {
     int a;
     int b;
     int c;
-    ind d;
+    int d;
 
 } struct_message;
 struct_message myData;
@@ -156,7 +156,7 @@ void loop() {
    
    if (dataReceived) {
         
-        sprintf(truyendi, "%d,%d,d", myData.b,yarnew);
+        sprintf(truyendi, "%d,%d,%d,%d,%d,d",myData.a,myData.b,myData.c,myData.d,yarnew);
         // sprintf(truyendi,"%d,d",yarnew);
         MySerial.write(truyendi);
          Serial.println(truyendi);
