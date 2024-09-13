@@ -48,6 +48,6 @@ void loop() {
   delay(100);
   
   esp_now_send(Slaveaddress, (uint8_t *) &myData, sizeof(myData)); 
-
+  //hoang anh tuan
   
 }
